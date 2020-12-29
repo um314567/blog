@@ -1,31 +1,37 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev":"nodemon ./server/server.js --exec babel-node"
-  },
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
   "description": "",
+  "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
+    "history": "^4.10.1",
     "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "mongoose": "^5.11.8"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.12.11",
-    "babel-loader": "^8.2.2",
+    "mongoose": "^5.11.8",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6"
-  }
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "sass-loader": "^10.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon ./server/server.js --exec babel-node --ignore './client'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/um314567/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/um314567/blog/issues"
+  },
+  "homepage": "https://github.com/um314567/blog#readme"
 }
