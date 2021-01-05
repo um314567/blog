@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { NavLink } from "react-router-dom";
+//import { CLEAR_ERROR_REQUEST, REGISTER_REQUEST } from "../../redux/types";
+import { NavItem } from "reactstrap";
+import { NavLink } from "reactstrap";
+//import { NavLink } from "react-router-dom";
 import {
   Button,
   FormGroup,
@@ -83,12 +86,12 @@ const RegisterModal = () => {
                 placeholder="email"
                 onChange={onChange}
               />
-              <Label for="password">Name</Label>
+              <Label for="password">Password</Label>
               <Input
                 type="password"
                 name="password"
                 id="password"
-                placeholder="password"
+                placeholder="Password"
                 onChange={onChange}
               />
               <Button color="dark" className="mt-2 block">
